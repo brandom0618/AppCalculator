@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkypeActivity"
+    android:background="@color/azul">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="273dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="356dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:hint="Enter Skype ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        android:background="@drawable/border_text_play"
+        android:paddingVertical="10dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/gray_label"
+        />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="356dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Password"
+        android:background="@drawable/border_text_play"
+        android:textColor="@color/gray_label"
+        android:inputType="textPassword"
+        android:paddingVertical="10dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/Btnazul"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        android:background="@drawable/buttons"
+        />
+
+    <TextView
+        android:id="@+id/lblProblems"
+        android:layout_width="246dp"
+        android:layout_height="23dp"
+        android:background="@color/azul"
+        android:text="Problems singing in?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
+        app:layout_constraintVertical_bias="0.128" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

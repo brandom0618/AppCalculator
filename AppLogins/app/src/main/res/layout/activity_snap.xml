@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnapActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/lblSnap1"
+        android:layout_width="130dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="184dp"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSingSnap"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/buttons_snap"
+        android:backgroundTint="@color/button_snap"
+        android:text="Log In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSnap4" />
+
+    <TextView
+        android:id="@+id/lblSnap3"
+        android:layout_width="230dp"
+        android:layout_height="26dp"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="PASSWORD"
+        android:textAlignment="viewStart"
+        android:textColor="@color/link_snap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserSnap"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/lblSnap4"
+        android:layout_width="230dp"
+        android:layout_height="26dp"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="Forgot your password?"
+        android:textAlignment="center"
+        android:textColor="@color/link_snap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordSnap"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/txtPasswordSnap"
+        android:layout_width="291dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_text_snap"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="@color/gray_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSnap3" />
+
+    <EditText
+        android:id="@+id/txtUserSnap"
+        android:layout_width="291dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_text_snap"
+        android:paddingLeft="15dp"
+        android:textColor="@color/gray_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSnap2" />
+
+    <ImageView
+        android:id="@+id/imgEyePass"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPasswordSnap"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordSnap"
+        app:layout_constraintTop_toBottomOf="@+id/lblSnap3"
+        app:layout_constraintVertical_bias="0.307"
+        app:srcCompat="@drawable/eye_pass" />
+
+    <TextView
+        android:id="@+id/lblSnap2"
+        android:layout_width="230dp"
+        android:layout_height="26dp"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="USERNAME OR EMAIL"
+        android:textAlignment="viewStart"
+        android:textColor="@color/link_snap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSnap1"
+        app:layout_constraintVertical_bias="0.034" />
+</androidx.constraintlayout.widget.ConstraintLayout>

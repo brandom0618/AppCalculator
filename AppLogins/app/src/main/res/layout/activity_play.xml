@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgBanner"
+        android:layout_width="410dp"
+        android:layout_height="201dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner_play" />
+
+    <TextView
+        android:id="@+id/lblMensaje1"
+        android:layout_width="346dp"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:enabled="false"
+        android:text="Access many sony group services, all with one sign-in ID"
+        android:textAlignment="viewStart"
+        android:textColor="@color/gray_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBanner"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/lblMensaje2"
+        android:layout_width="351dp"
+        android:layout_height="26dp"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="Learn More"
+        android:textAlignment="viewStart"
+        android:textColor="@color/link"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMensaje1"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/lblMensaje3"
+        android:layout_width="323dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="148dp"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="Trouble Signing In?"
+        android:textAlignment="viewStart"
+        android:textColor="@color/link"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingIn"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/txtUserPlay"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblMensaje2"
+        android:hint="Sign-In ID (Email Adress)"
+        android:textColor="@color/gray_label"
+        android:paddingLeft="15dp"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/border_text_play"/>
+
+    <EditText
+        android:id="@+id/txtPasswordPlay"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:background="@drawable/border_text_play"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/gray_label"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserPlay" />
+
+    <ImageView
+        android:id="@+id/imgEyePass"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPasswordPlay"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordPlay"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserPlay"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/eye_pass" />
+
+    <Button
+        android:id="@+id/btnSingInPlay"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/blue_button_singin"
+        android:text="Sing In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordPlay" />
+
+    <Button
+        android:id="@+id/btnCreatePlay"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Create New Account"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMensaje3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
