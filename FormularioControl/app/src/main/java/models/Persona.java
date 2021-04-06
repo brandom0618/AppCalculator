@@ -7,7 +7,6 @@ import java.util.List;
 
 public class Persona {
 
-
     private String Nombre;
     private String Apellido;
     private String Cargo;
@@ -76,5 +75,4 @@ public class Persona {
     public void setCargo(String cargo) {
         Cargo = cargo;
     }
-
 }

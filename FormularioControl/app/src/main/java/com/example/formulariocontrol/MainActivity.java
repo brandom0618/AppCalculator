@@ -79,8 +79,19 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             String Apellido = txtApellido.getText().toString();
             String Cargo = txtCargo.getText().toString();
             String Email = txtEmail.getText().toString();
-            int Salario = Integer.parseInt(txtSalario.getText().toString());
-            int Edad = Integer.parseInt(txtEdad.getText().toString());
+            int Salario;
+            if(txtSalario.getText().toString().equals("")){
+                 Salario = 0;
+            }else{
+                Salario = Integer.parseInt(txtSalario.getText().toString());
+            }
+            int Edad;
+
+            if(txtEdad.getText().toString().equals("")){
+                Edad = 0;
+            }else{
+                Edad = Integer.parseInt(txtEdad.getText().toString());
+            }
 
             //METODO CREAR PERSONA
             CrearPersona(Nombre,Apellido,Cargo,Email,Salario,Edad);
