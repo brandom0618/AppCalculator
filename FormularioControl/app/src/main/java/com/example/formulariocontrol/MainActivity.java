@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private Button btnSalarioAlto;
     private Button btnPromedio;
     private Button btnListaDetalle;
-    public  List<Persona> listaPersonas = new ArrayList<>();
+    public  static List<Persona> listaPersonas = new ArrayList<>();
 
 
     @Override
@@ -233,22 +233,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     }
 
     public void AbrirPopUp(){
-        String cadena = "";
         //CREAR INTENT
         Intent ventanaIntent = new Intent(this,VentanaDetalleActivity.class);
 
-        List<String> listaCargos  = new ArrayList<>();
-        //MANDAR LA LISTA AGRUPADA CONVERTIDA EN STRING PARA MOSTRAR EN POPUP
-        for(int i=0; i< this.listaPersonas.size(); i++){
-            //VALIDAR QUE EL CARGO NO ESTE CREADO EN EL ARRAY
-            if(listaCargos.contains(this.listaPersonas.get(i).getCargo()) == false){
-                listaCargos.add(this.listaPersonas.get(i).getCargo());
-            }
-        }
-
-        //RECORRER ARRAY DE CARGOS Y EMPEZAR A ACUMULAR LAS COINCIDENCIAS
-
         //LANZAR INTENT
-        //startActivity(ventanaIntent);
+        startActivity(ventanaIntent);
     }
 }
