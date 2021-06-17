@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonDetailActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="91dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="5dp"
+        android:text="Gender"
+        android:textColor="@color/textos"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeigth" />
+
+    <TextView
+        android:id="@+id/tvAbility"
+        android:layout_width="203dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="5dp"
+        android:textStyle="bold|italic"
+        android:text="Ability"
+        android:textColor="@color/textos"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+    <ImageView
+        android:id="@+id/imgPokemon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNamePokemon"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textos"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvheight"
+        android:layout_width="91dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="5dp"
+        android:text="Height"
+        android:textColor="@color/textos"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamePokemon" />
+
+    <TextView
+        android:id="@+id/tvheightInfo"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/textos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/tvheight"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamePokemon" />
+
+    <TextView
+        android:id="@+id/tvWeigth"
+        android:layout_width="91dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="5dp"
+        android:text="Weigth"
+        android:textColor="@color/textos"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/tvheight" />
+
+    <TextView
+        android:id="@+id/tvWeigthinfo"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/textos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvWeigth"
+        app:layout_constraintTop_toBottomOf="@+id/tvheightInfo" />
+
+    <TextView
+        android:id="@+id/tvGenderInfo"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/textos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvWeigth"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeigthinfo" />
+
+    <EditText
+        android:id="@+id/etAbilityInfo"
+        android:layout_width="303dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbility" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
